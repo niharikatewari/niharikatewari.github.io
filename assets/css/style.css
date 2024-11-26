@@ -97,11 +97,11 @@ div.body span a:hover {
 #body,
 div.body {
 	background: #f6efe5;
-	border: 1px solid #e0dacc;
-	margin: 17px auto 25px;
-	overflow: hidden;
-	padding: 0 0 30px;
-	width: 960px;
+        border: 1px solid #e0dacc;
+        margin: 89px auto 25px;
+        overflow: hidden;
+        padding: 0 0px 30px;
+        width: 1725px;
 }
 
 #body ul {
