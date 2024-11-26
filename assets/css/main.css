@@ -219,6 +219,36 @@ input, select, textarea {
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
+	#taskbar {
+	    background-color: #333;
+	    padding: 10px 0;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    z-index: 1000;
+	}
+	
+	#taskbar .taskbar-links {
+	    list-style: none;
+	    text-align: center;
+	}
+	
+	#taskbar .taskbar-links li {
+	    display: inline;
+	    margin: 0 15px;
+	}
+	
+	#taskbar .taskbar-links li a {
+	    color: white;
+	    text-decoration: none;
+	    font-size: 18px;
+	}
+	
+	#taskbar .taskbar-links li a:hover {
+	    color: #ffcc00;
+	}
+
 
 		pre code {
 			display: block;
@@ -238,6 +268,7 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+
 
 /* Container */
 
