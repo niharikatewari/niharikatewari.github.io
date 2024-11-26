@@ -220,28 +220,30 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 	#taskbar {
-	    padding: 10px 0;
 	    position: fixed;
-	    top: 0;
-	    left: 0;
-	    right: 0;
+	    top: 50%;  /* Centers vertically */
+	    right: 0;  /* Pins it to the right side */
+	    transform: translateY(-50%);  /* Centers the taskbar exactly in the middle vertically */
+	    background-color: #333;
+	    padding: 15px 0;
 	    z-index: 1000;
 	}
 	
 	#taskbar .taskbar-links {
 	    list-style: none;
-	    text-align: center;
+	    text-align: left;
+	    padding: 0;
 	}
 	
 	#taskbar .taskbar-links li {
-	    display: inline;
-	    margin: 0 15px;
+	    margin: 10px 0;
 	}
 	
 	#taskbar .taskbar-links li a {
 	    color: white;
 	    text-decoration: none;
 	    font-size: 18px;
+	    padding: 8px;
 	}
 	
 	#taskbar .taskbar-links li a:hover {
