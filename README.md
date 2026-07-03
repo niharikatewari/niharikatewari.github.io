@@ -1,4 +1,4 @@
-# Academic Homepage Template — Sidebar Layout
+# Academic Homepage Template
 
 Same content sections as a classic academic homepage (about, news,
 publications, service, honors, teaching) but a genuinely different layout:
@@ -11,8 +11,8 @@ Plain HTML/CSS, no build step, no JavaScript.
 
 ```
 index.html          ← everything (content + styling) lives in this one file
-images/headshot.jpg  ← your photo
-files/               ← put your CV.pdf here
+images/niharika.jpg  ← your photo 
+% files/               ← put your CV.pdf here
 ```
 
 Publications in this layout don't use thumbnail images — it's a cleaner,
@@ -21,8 +21,8 @@ into each `.pub-entry` block; ask and I can do that version too.
 
 ## How to use it
 
-1. **Create your GitHub Pages repo** named `yourusername.github.io`.
-2. **Upload** `index.html`, `images/headshot.jpg`, and the `files/` folder.
+1. **Create your GitHub Pages repo** named `yourusername.github.io`. This one is "https://niharikatewari.github.io/"
+2. **Upload** `index.html`, `images/niharika.jpg`, and the `files/` folder. Files only if you want to upload CV. 
 3. **Replace placeholder content** directly in `index.html`:
    - Sidebar: name, role/department, contact links
    - About paragraph(s)
@@ -42,3 +42,5 @@ into each `.pub-entry` block; ask and I can do that version too.
   live in the `:root { --variable }` block at the top of `<style>`.
 - On narrow/mobile screens the sidebar collapses to a horizontal bar above
   the content automatically — no separate mobile markup needed.
+  
+Hope you like it! :)
