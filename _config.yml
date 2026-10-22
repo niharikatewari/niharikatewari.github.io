@@ -22,32 +22,32 @@ repository               : "minimalacademicsite/minimalacademicsite.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "John Doe"
+  avatar           : "images/niharika.jpgg"
+  name             : "Niharika Tewari"
   description      : ""
   pronouns         : ""
-  bio              : "I am a researcher focusing on machine learning and data science."
-  location         : "City, Country"
-  employer         : "Institution Name"
+  bio              : "I'm a Doctoral researcher"
+  location         : "Delhi, India"
+  employer         : "RMIT University x Bits Pilani"
   uri              : 
-  email            : "your.email@example.com" 
+  email            : "researchniharika24@gmail.com" 
 
   # Academic websites
   academia         : 
   arxiv            : 
-  googlescholar    : "your-google-scholar-id"
+  googlescholar    : "https://scholar.google.com/citations?user=8LDROL0AAAAJ&hl=en"
   impactstory      : 
-  orcid            : "your-orcid-id"
+  orcid            : "https://orcid.org/0000-0002-7690-9814"
   semantic         : 
   pubmed           : 
-  researchgate     : 
+  researchgate     : https://www.researchgate.net/profile/Niharika-Tewari
   scopus           : 
 
   # Repositories and software development
   bitbucket        : 
   codepen          : 
   dribbble         : 
-  github           : "your-github-username"
+  github           : "https://github.com/niharikatewari"
   kaggle           : 
   stackoverflow    : 
 
@@ -62,7 +62,7 @@ author:
   keybase          : 
   instagram        : 
   lastfm           : 
-  linkedin         : "your-linkedin-username"
+  linkedin         : "https://www.linkedin.com/in/niharika-tewari-b29033116/"
   mastodon         : 
   medium           : 
   pinterest        : 
