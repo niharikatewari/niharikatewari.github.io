@@ -1,0 +1,467 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Julian Y. V. Borges, MD, MS | Researcher CV (ORCID)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Academic researcher CV for Julian Y. V. Borges, MD, MS. Clinician scientist specializing in computational drug discovery, clinical AI governance, genomic epidemiology, and translational endocrinology. Boston University, Department of Computer Science." />
+
+  <style>
+    :root {
+      font-size: 16px;
+      line-height: 1.5;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --bg: #f3f4f6; --card: #ffffff; --text: #111827; --muted: #6b7280; --border: #e5e7eb;
+      --badge-bg: #eef2ff; --badge-border: #e0e7ff; --badge-text: #3730a3;
+      --kpi-bg: #f9fafb; --kpi-text: #374151; --accent: #1e40af; --link: #2563eb;
+      --pill-bg: #f9fafb; --shade: #D9E2F3; --track-border: #2563eb;
+      color: var(--text); background-color: var(--bg);
+    }
+    [data-theme="dark"] {
+      --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --muted: #94a3b8; --border: #334155;
+      --badge-bg: #1e293b; --badge-border: #475569; --badge-text: #93c5fd;
+      --kpi-bg: #1e293b; --kpi-text: #cbd5e1; --accent: #60a5fa; --link: #93c5fd;
+      --pill-bg: #1e293b; --shade: #334155; --track-border: #60a5fa;
+    }
+    [data-theme="dark"] {
+      --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --muted: #94a3b8; --border: #334155;
+      --badge-bg: #1e293b; --badge-border: #475569; --badge-text: #93c5fd;
+      --kpi-bg: #1e293b; --kpi-text: #cbd5e1; --accent: #60a5fa; --link: #93c5fd;
+      --pill-bg: #1e293b; --shade: #334155; --track-border: #60a5fa;
+    }
+    body { margin: 0; padding: 0; }
+    .page { max-width: 1120px; margin: 2rem auto; padding: 2rem; background: var(--card); box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-radius: 0.75rem; }
+    h1, h2, h3, h4 { margin-top: 0; color: var(--text); }
+    h1 { font-size: 2rem; letter-spacing: 0.03em; text-transform: uppercase; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.35rem; margin-top: 2rem; border-bottom: 2px solid var(--border); padding-bottom: 0.4rem; }
+    h3 { font-size: 1.05rem; margin-bottom: 0.2rem; }
+    p { margin: 0.5rem 0; }
+    .muted { color: var(--muted); font-size: 0.95rem; }
+    .small { font-size: 0.92rem; }
+    .header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.25rem; border-bottom: 2px solid var(--border); padding-bottom: 1rem; margin-bottom: 0.9rem; align-items: flex-start; }
+    .header-left { flex: 1 1 780px; min-width: 320px; }
+    .header-identity { display: flex; gap: 1rem; align-items: flex-start; }
+    .header-identity-text { display: flex; flex-direction: column; min-width: 0; }
+    .profile-photo { width: auto; height: 100%; min-height: 176px; max-height: 240px; aspect-ratio: 3/4; object-fit: cover; border-radius: 0.75rem; border: 1px solid var(--border); background: var(--card); flex: 0 0 auto; margin-top: 10px; }
+    .tagline { margin-top: 0.25rem; font-weight: 700; color: var(--kpi-text); }
+    .tertiary { margin-top: 0.15rem; color: var(--muted); font-size: 0.95rem; }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; align-items: center; }
+    .badge { display: inline-flex; align-items: center; gap: 0.45rem; background: var(--badge-bg); border: 1px solid var(--badge-border); border-radius: 999px; padding: 0.25rem 0.75rem; font-size: 0.85rem; color: var(--badge-text); text-decoration: none; white-space: nowrap; line-height: 1; }
+    .badge-icon { width: 0.95rem; height: 0.95rem; display: inline-block; vertical-align: middle; flex: 0 0 auto; }
+    .contact-wide { border: 1px solid var(--border); border-radius: 0.75rem; padding: 0.85rem 0.95rem; background: var(--card); margin-bottom: 1.25rem; }
+    .contact-wide-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.85rem 1rem; align-items: start; }
+    .contact-wide-item .label { color: var(--muted); font-size: 0.92rem; font-weight: 700; }
+    .contact-wide-item .value { margin-top: 0.15rem; font-size: 0.95rem; text-align: left; }
+    .contact-wide-item .value .small { display: block; margin-top: 0.15rem; font-size: 0.92rem; }
+    @media (max-width: 980px) { .contact-wide-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 560px) { .contact-wide-grid { grid-template-columns: 1fr; } }
+    .keywords-frame { border: 1px solid var(--border); border-radius: 0.75rem; padding: 0.85rem 0.95rem; background: var(--card); margin-top: 0.85rem; }
+    .pill-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; justify-content: flex-start; }
+    .pill-list li { background: var(--kpi-bg); border-radius: 999px; padding: 0.25rem 0.75rem; font-size: 0.85rem; color: var(--text); border: 1px solid var(--border); white-space: nowrap; flex: 0 0 auto; }
+    .card { border: 1px solid var(--border); border-radius: 0.75rem; padding: 1rem; background: var(--card); }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; margin-top: 0.9rem; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.9rem; margin-top: 0.9rem; }
+    .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 0.9rem; margin-top: 0.9rem; }
+    @media (max-width: 980px) { .grid-3, .grid-4 { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 720px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } .header-identity { flex-direction: column; align-items: flex-start; } .profile-photo { width: 160px; height: auto; min-height: 0; max-height: none; margin-top: 0; } }
+    .item { margin-bottom: 1rem; }
+    .item-header { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.35rem; align-items: baseline; }
+    .item-title { font-weight: 800; }
+    .item-meta { font-size: 0.92rem; color: var(--muted); }
+    ul { margin-top: 0.4rem; padding-left: 1.1rem; }
+    li { margin-bottom: 0.35rem; }
+    a { color: var(--link); text-decoration: none; }
+    a, .badge { transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, color 160ms ease, opacity 160ms ease; will-change: transform; }
+    a:hover { text-decoration: underline; transform: translateY(-1px); }
+    a:active { transform: translateY(0px); opacity: 0.95; }
+    .badge:hover { transform: translateY(-1px) scale(1.04); box-shadow: 0 10px 18px rgba(17,24,39,0.10); background: var(--badge-bg); text-decoration: none; }
+    .kpi { border: 1px solid var(--border); border-radius: 0.75rem; padding: 0.9rem; background: var(--kpi-bg); height: 100%; }
+    .kpi .kpi-title { font-weight: 800; margin-bottom: 0.15rem; }
+    .kpi .kpi-text { color: var(--kpi-text); font-size: 0.95rem; }
+    .subheading { font-weight: 800; margin-top: 1rem; margin-bottom: 0.35rem; }
+    .track-card { border-left: 4px solid var(--track-border); padding-left: 0.9rem; margin-bottom: 1.2rem; }
+    .track-card h3 { color: var(--accent); margin-bottom: 0.3rem; }
+    .stat-row { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 0.6rem 0; }
+    .stat { text-align: center; }
+    .stat-num { font-size: 1.8rem; font-weight: 800; color: var(--accent); line-height: 1.1; }
+    .stat-label { font-size: 0.8rem; color: var(--muted); }
+        .theme-toggle { position: fixed; top: 1rem; right: 1rem; z-index: 999; background: var(--card); border: 1px solid var(--border); border-radius: 999px; width: 44px; height: 44px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: 0 2px 8px rgba(0,0,0,0.12); transition: background 200ms, border 200ms; }
+    .theme-toggle:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.18); }
+    .v-badge { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.2rem 0.6rem; border-radius: 0.4rem; font-size: 0.78rem; font-weight: 600; text-decoration: none; color: #fff; }
+    .v-badge.orcid { background: #a6ce39; border: 1px solid #a6ce39; }
+    .v-badge.scopus { background: #e9711c; border: 1px solid #e9711c; }
+    .v-badge.wos { background: #5856d6; border: 1px solid #5856d6; }
+    .v-badge.plos { background: #3c63af; border: 1px solid #3c63af; }
+    .v-badge.jamia { background: #1a1a2e; border: 1px solid #1a1a2e; }
+    .v-badge.chemrxiv { background: #c0392b; border: 1px solid #c0392b; }
+    .v-badge.harvard { background: #a51c30; border: 1px solid #a51c30; }
+    .v-badge.ssrn { background: #2c3e50; border: 1px solid #2c3e50; }
+    .v-badge.zenodo { background: #024ea1; border: 1px solid #024ea1; }
+    @media print { .theme-toggle { display: none; } }
+    @media print { :root { background: var(--card); } .page { box-shadow: none; margin: 0; border-radius: 0; max-width: none; padding: 0.75in; } a { color: var(--text); text-decoration: none; } .badge { border: 1px solid #d1d5db; background: var(--card); color: var(--text); } .kpi { background: var(--card); } }
+  </style>
+</head>
+<body>
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <span id="theme-icon">&#9790;</span>
+</button>
+<script>
+function toggleTheme(){
+  const d=document.documentElement;
+  const t=d.getAttribute('data-theme')==='dark'?'light':'dark';
+  d.setAttribute('data-theme',t);
+  localStorage.setItem('theme',t);
+  document.getElementById('theme-icon').innerHTML=t==='dark'?'&#9788;':'&#9790;';
+}
+(function(){
+  const s=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+  if(s==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('theme-icon').innerHTML='&#9788;'});}
+})();
+</script>
+<main class="page">
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-left">
+    <div class="header-identity">
+      <img src="assets/profile.jpg" alt="Julian Y. V. Borges" class="profile-photo" />
+      <div class="header-identity-text">
+        <h1>Julian Y. V. Borges, MD, MS</h1>
+        <div class="tagline">Clinician Scientist | Computational Drug Discovery | Clinical AI Governance | Genomic Epidemiology</div>
+        <div class="tertiary">Translational Research · Medical Informatics · Precision Endocrinology · Evidence Synthesis</div>
+        <p class="muted small">
+          Physician researcher operating at the intersection of clinical medicine, computational biology, and artificial intelligence.
+          Principal investigator of three active research programs spanning governed AI drug discovery, systematic evidence synthesis, and
+          genomic causal inference. Academic affiliation with the Department of Computer Science at Boston University.
+        </p>
+        <div class="badge-row">
+          <a class="badge" href="https://orcid.org/0009-0001-9929-3135" target="_blank" rel="noopener">ORCID</a>
+          <a class="badge" href="https://www.linkedin.com/in/julian-borges-md/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="badge" href="https://github.com/fxmedus" target="_blank" rel="noopener">GitHub (fxmedus)</a>
+          <a class="badge" href="https://github.com/julian-borges-md" target="_blank" rel="noopener">GitHub (academic)</a>
+          <a class="badge" href="https://dataverse.harvard.edu/dataverse/julian_borges" target="_blank" rel="noopener">Harvard Dataverse</a>
+          <a class="badge" href="https://x.com/julianborgesmd" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CONTACT BOX -->
+<div class="contact-wide">
+  <div class="contact-wide-grid">
+    <div class="contact-wide-item">
+      <div class="label">Affiliation</div>
+      <div class="value">Boston University<div class="small">Dept. of Computer Science</div></div>
+    </div>
+    <div class="contact-wide-item">
+      <div class="label">Contact</div>
+      <div class="value"><a href="mailto:jyborges@bu.edu">jyborges@bu.edu</a></div>
+    </div>
+    <div class="contact-wide-item">
+      <div class="label">Identifiers</div>
+      <div class="value">
+        <div class="small">Scopus: <a href="http://www.scopus.com/inward/authorDetails.url?authorID=59247184100&partnerID=MN8TOARS" target="_blank">59247184100</a></div>
+        <div class="small">ResearcherID: <a href="https://www.webofscience.com/wos/author/record/KVZ-2689-2024" target="_blank">KVZ-2689-2024</a></div>
+        <div class="small">SciProfiles: <a href="https://sciprofiles.com/profile/3701785" target="_blank">3701785</a></div>
+      </div>
+    </div>
+    <div class="contact-wide-item">
+      <div class="label">Countries</div>
+      <div class="value">United States, Brazil</div>
+    </div>
+  </div>
+</div>
+
+<!-- KEYWORDS -->
+<div class="keywords-frame">
+  <ul class="pill-list">
+    <li>Computational Drug Discovery</li>
+    <li>AI Governance</li>
+    <li>Mitochondrial Disease</li>
+    <li>Translational Science</li>
+    <li>Genomic Epidemiology</li>
+    <li>Mendelian Randomization</li>
+    <li>Evidence Synthesis</li>
+    <li>Multi Agent Systems</li>
+    <li>Precision Endocrinology</li>
+    <li>Clinical Informatics</li>
+    <li>Digital Health</li>
+    <li>Machine Learning</li>
+    <li>Deep Learning</li>
+    <li>MCDA</li>
+    <li>Systematic Review</li>
+    <li>Meta Analysis</li>
+    <li>Cardio Endocrinology</li>
+  </ul>
+</div>
+
+<!-- RESEARCH METRICS -->
+<section>
+  <h2>Research Output Summary</h2>
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:0.9rem; justify-content:center;">
+    <div class="stat"><div class="stat-num">40+</div><div class="stat-label">Publications and Preprints</div></div>
+    <div class="stat"><div class="stat-num">8</div><div class="stat-label">Manuscripts Under Review</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">ChemRxiv Preprints</div></div>
+    <div class="stat"><div class="stat-num">22</div><div class="stat-label">SSRN Working Papers</div></div>
+    <div class="stat"><div class="stat-num">10</div><div class="stat-label">Zenodo Data Deposits</div></div>
+    <div class="stat"><div class="stat-num">49+</div><div class="stat-label">Peer Reviews Completed</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Active Research Programs</div></div>
+  </div>
+</section>
+
+<!-- RESEARCH TRACKS -->
+<section>
+  <h2>Active Research Programs</h2>
+  <div class="card">
+
+    <div class="track-card">
+      <h3>Track 1: Governed AI Drug Discovery (DrugSynth AI / MitoCoreX)</h3>
+      <p class="small">Principal Investigator. Disease agnostic governed multi agent AI drug discovery platform with MitoCoreX as the first validation case targeting genetically defined mitochondrial disease (DRP1, PINK1, Keap1, NDUFV1, SDHA). 67 agent architecture, 11 stage pipeline, 536 tests, 3 completed campaigns. First in class molecule designs include a PINK1 G309D selective activator and a 271 Da BBB penetrant Keap1 disruptor. Platform produces dual outputs per stage: machine readable registries and peer reviewed IMRAD manuscripts. 10 manuscripts completed (8 under journal review), 10 SSRN preprints, 5 ChemRxiv preprints, 10 Zenodo data deposits. USPTO provisional patent 64/018,624.</p>
+      <p class="small muted">GeneVector Thesis Track (4 papers): TCDR representation standard, TCDR Engine computational architecture, MitoCoreX case series evaluation, and Evidence Readiness Index for translational gap optimization. Code: <a href="https://github.com/fxmedus/genevector-track" target="_blank">github.com/fxmedus/genevector-track</a></p>
+    </div>
+
+    <div class="track-card">
+      <h3>Track 2: Clinical AI Governance and Responsible Deployment</h3>
+      <p class="small">Research on structural failure modes in clinical AI systems, auditability infrastructure, and governance standards for adaptive learning systems. Published the Externally Governed Learning Systems (EGLS) framework (USPTO provisional 63/975,551), multi arm bandit governance for clinical AI (Zenodo), and the AIDD GOV open governance standard for AI driven drug discovery (Apache 2.0). Academic Editor at PLOS Digital Health (36+ reviews). Published in JAMIA Open. 7 SSRN governance preprints with 12,000+ combined views.</p>
+    </div>
+
+    <div class="track-card">
+      <h3>Track 3: Evidence Synthesis and Genomic Epidemiology</h3>
+      <p class="small">Iron: Friend or Foe (IronFF): Multi pool systematic review and meta analysis on iron overload and aging related outcomes (10 pools spanning cellular aging, cardiovascular disease, diabetes, neurodegeneration, carcinogenesis, and endocrine outcomes). Pool 7 (Male Hypogonadism) submitted to European Journal of Endocrinology. Pool 6 (Neurodegeneration) submitted to Frontiers in Genetics. PROSPERO registered (CRD420261344877).</p>
+      <p class="small">CYP19A1 ASD Mendelian Randomization: Two sample MR study using GTEx eQTLs and OpenGWAS data with Bayesian colocalization. Submitted to Frontiers in Genetics. Key finding: CYP19A1 has zero eQTL records across all five GTEx v8 brain tissues examined.</p>
+      <p class="small">Retatrutide Research Program: Narrative review of triple GIP/GLP1/glucagon receptor agonism for obesity, type 2 diabetes, and MASLD. Three manuscripts authorized (M1 drafted, target: Diabetes, Obesity and Metabolism).</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- EMPLOYMENT -->
+<section>
+  <h2>Employment and Academic Appointments</h2>
+  <div class="card">
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">Boston University | Research Affiliate, Department of Computer Science</div>
+        <div class="item-meta">Boston, MA | 2025 to present</div>
+      </div>
+      <p class="small muted">Frontier Translational Research Lab. Computational drug discovery, clinical AI governance, health informatics research.</p>
+    </div>
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">FxMEDUS LLC | Founder and Chief Scientist</div>
+        <div class="item-meta">Florida, United States | 2024 to present</div>
+      </div>
+      <p class="small muted">Digital health, translational research infrastructure, IP portfolio development.</p>
+    </div>
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">Afya Medical Post Graduation Institute | Associate Professor of Medicine</div>
+        <div class="item-meta">Goiania, Brazil | 2022 to present</div>
+      </div>
+      <p class="small muted">Endocrinology, diabetes, and metabolism.</p>
+    </div>
+    <div class="item" style="margin-bottom:0;">
+      <div class="item-header">
+        <div class="item-title">FxMED, Medicina Funcional | Staff Physician and Medical Director</div>
+        <div class="item-meta">Goiania, Brazil | 2011 to present</div>
+      </div>
+      <p class="small muted">Endocrinology and clinical nutrition.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section>
+  <h2>Education and Qualifications</h2>
+  <div class="grid-2">
+    <div class="card">
+      <div class="subheading">Graduate and Certificate Training</div>
+      <ul>
+        <li>Boston University | MS Health Informatics (Data Analytics) candidate | 2025 to 2027</li>
+        <li>Harvard Medical School | Global Clinical Scholars Research Training (GCSRT), Genetic Epidemiology elective | 2024 to 2025</li>
+        <li>UC San Diego | Drug discovery, development, and product management | 2025</li>
+        <li>Northeastern University | Health informatics for healthcare professionals | 2025</li>
+        <li>Johns Hopkins | Clinical informatics specialization | 2025</li>
+        <li>Johns Hopkins | Bioinformatics, Python for genomic data science | 2025</li>
+        <li>NIH OCRECO | Principles and Practices of Clinical Pharmacology (IPCP) | 2025</li>
+        <li>NIH OCRECO | Principles and Practices of Clinical Research (IPCR) | 2024</li>
+        <li>HarvardX | AI and ML with R and Python, statistics, Python for research | 2024</li>
+        <li>PUC Goias | Medical genetics masters program | 2015 to 2016</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="subheading">Medical Training and Board Certification</div>
+      <ul>
+        <li>Centro Universitario Serra dos Orgaos | Doctor of Medicine (MD) | 1996 to 2002</li>
+        <li>Endocrinology, diabetes and metabolism | Board certification (SBEM/CFM/AMB), distinction | 2014</li>
+        <li>Clinical nutrition and nutrology | Board certification (ABRAN/CFM/AMB), distinction | 2013</li>
+        <li>Nutrology fellowship | 2012 to 2013</li>
+        <li>Endocrinology fellowship | 2011 to 2013</li>
+        <li>Medical biochemistry postgraduate program | 2006 to 2008</li>
+        <li>Exercise and sports medicine postgraduate program | 2003</li>
+      </ul>
+      <div class="subheading">Invited Positions and Distinctions</div>
+      <ul>
+        <li>Academic Editor | PLOS Digital Health | 2025 to present</li>
+        <li>Editor in Chief | Intl. Journal of Epidemiology and Public Health Research | 2024 to present</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED PUBLICATIONS: COMPUTATIONAL DRUG DISCOVERY -->
+<section>
+  <h2>Selected Publications and Preprints</h2>
+
+  <div class="card">
+    <div class="subheading">Computational Drug Discovery (DrugSynth AI / MitoCoreX)</div>
+    <p class="muted small">ChemRxiv preprints (peer reviewed chemistry server, American Chemical Society)</p>
+    <ul class="small">
+      <li>ADMET Profiling of a Mitochondria Focused Compound Library (ChemRxiv, 2026). <a href="https://doi.org/10.26434/chemrxiv.15001519/v1" target="_blank">DOI:10.26434/chemrxiv.15001519/v1</a></li>
+      <li>AI Assisted De Novo Design of Small Molecule Candidates Targeting Five Priority Mitochondrial Proteins (ChemRxiv, 2026). <a href="https://doi.org/10.26434/chemrxiv.15001592/v1" target="_blank">DOI:10.26434/chemrxiv.15001592/v1</a></li>
+      <li>Computational Druggability Assessment of Mitochondrial Targets (ChemRxiv, 2026). <a href="https://doi.org/10.26434/chemrxiv.15001595/v1" target="_blank">DOI:10.26434/chemrxiv.15001595/v1</a></li>
+      <li>DrugSynthAI Computational Validation of an AI Governed Multi Agent Drug Discovery Platform (ChemRxiv, 2026). <a href="https://doi.org/10.26434/chemrxiv.15001670/v1" target="_blank">DOI:10.26434/chemrxiv.15001670/v1</a></li>
+      <li>Pan Mitochondrial Privileged Scaffolds: Adenine, Pyridine, and a 7H Purine Bioisostere (ChemRxiv, 2026). <a href="https://doi.org/10.26434/chemrxiv.15001671/v1" target="_blank">DOI:10.26434/chemrxiv.15001671/v1</a></li>
+    </ul>
+    <p class="muted small">SSRN working papers and journal submissions</p>
+    <ul class="small">
+      <li>DrugSynth AI: An AI Pipeline for De Novo Molecule Design Targeting Mitochondrial Defects (SSRN, 2026). <a href="https://doi.org/10.2139/ssrn.6493958" target="_blank">SSRN:6493958</a></li>
+      <li>MitoCorex: A Validated AI Pipeline for Precision Drug Design (SSRN, 2026). <a href="https://doi.org/10.2139/ssrn.6494079" target="_blank">SSRN:6494079</a></li>
+      <li>Mitochondrial Pathway Architecture: A Systems Level Map of Target Connectivity (SSRN, 2026). <a href="https://doi.org/10.2139/ssrn.6493844" target="_blank">SSRN:6493844</a></li>
+      <li>Molecular Consequence Modeling of Mitochondrial Gene Variants (SSRN, 2026). <a href="https://doi.org/10.2139/ssrn.6493898" target="_blank">SSRN:6493898</a></li>
+      <li>In Silico Pharmacological Profiling of MitoCorex Candidate Molecules (SSRN, 2026). <a href="https://doi.org/10.2139/ssrn.6494058" target="_blank">SSRN:6494058</a></li>
+      <li>The Therapeutic Candidate Decision Record: A Computable Representation and Minimum Information Standard (SSRN, 2026). <a href="https://doi.org/10.2139/ssrn.6796779" target="_blank">SSRN:6796779</a></li>
+      <li>Structured Multi Criteria Evaluation of Therapeutic Candidates: MitoCoreX Case Series (SSRN, 2026). <a href="https://doi.org/10.2139/ssrn.6796818" target="_blank">SSRN:6796818</a></li>
+      <li>The Evidence Readiness Index: Budget Constrained Optimization for Translational Gap Resolution (SSRN, 2026). <a href="https://doi.org/10.2139/ssrn.6796898" target="_blank">SSRN:6796898</a></li>
+    </ul>
+    <p class="muted small">Data repositories</p>
+    <ul class="small">
+      <li>Harvard Dataverse V2: MitoCoreX Compound Library and Validation Data. <a href="https://doi.org/10.7910/DVN/WGHUWM" target="_blank">DOI:10.7910/DVN/WGHUWM</a></li>
+      <li>Zenodo: 10 data deposits (Z01 through Z10) covering pathway maps, compound libraries, defect classifications, engine validation, molecule designs, pharmacological profiles, platform architecture, scaffold analysis, and ADMET baselines.</li>
+    </ul>
+
+    <div class="subheading">Clinical AI Governance</div>
+    <ul class="small">
+      <li>Auditing Shortcut Learning and Misclassification in AI Based Breast Cancer Genomic Subtyping (JAMIA Open, 2026). <a href="https://doi.org/10.1093/jamiaopen/ooaf177" target="_blank">DOI:10.1093/jamiaopen/ooaf177</a></li>
+      <li>Machine Learning Insights for Cardiovascular Risk Prediction in Diabetic Patients (Artificial Intelligence in Health, 2026). <a href="https://doi.org/10.36922/AIH025490111" target="_blank">DOI:10.36922/AIH025490111</a></li>
+      <li>Multi Arm Bandit Governance for Clinical AI (Zenodo, 2026). <a href="https://doi.org/10.5281/zenodo.18248285" target="_blank">DOI:10.5281/zenodo.18248285</a></li>
+      <li>Externally Governed Learning Systems: Adaptive Computation Under Viability Constraints (SSRN, 2026). <a href="https://doi.org/10.2139/ssrn.6160268" target="_blank">SSRN:6160268</a></li>
+      <li>Clinical AI as a Sociotechnical System: Structural Failure Modes and Governance Requirements (SSRN, 2026). <a href="https://doi.org/10.2139/ssrn.6159427" target="_blank">SSRN:6159427</a> <span class="muted">(186 views, 52 downloads)</span></li>
+      <li>Payer Mediated AI Governance and Reimbursement Driven Algorithm Behavior in US Healthcare (SSRN, 2026). <a href="https://doi.org/10.2139/ssrn.6159287" target="_blank">SSRN:6159287</a></li>
+      <li>Auditable AI for Genomic Equity: A Compliance as a Service Model (SSRN, 2026). <a href="https://doi.org/10.2139/ssrn.6159546" target="_blank">SSRN:6159546</a></li>
+    </ul>
+
+    <div class="subheading">Evidence Synthesis (Iron Overload, Mendelian Randomization)</div>
+    <ul class="small">
+      <li>Iron Overload and Male Hypogonadism: A Systematic Review of the HPG Axis (SSRN, 2026; submitted EJE). <a href="https://doi.org/10.2139/ssrn.6427860" target="_blank">SSRN:6427860</a></li>
+      <li>HFE Genotype and Neurodegeneration: Updated Systematic Review (SSRN, 2026; submitted Frontiers Genetics). <a href="https://doi.org/10.2139/ssrn.6427818" target="_blank">SSRN:6427818</a></li>
+    </ul>
+
+    <div class="subheading">Cardio Endocrine and Translational Medicine</div>
+    <ul class="small">
+      <li>Oral Testosterone Therapy in Hypogonadal Men: Systematic Review and Meta Analysis (2024). <a href="https://doi.org/10.1101/2024.09.22.24314162" target="_blank">DOI:10.1101/2024.09.22.24314162</a></li>
+      <li>Inverse Association between TRT and Cardiovascular Disease Risk: 25 year Review (2024). <a href="https://doi.org/10.1101/2024.06.21.24309326" target="_blank">DOI:10.1101/2024.06.21.24309326</a></li>
+      <li>Challenging the Salt Paradigm: Dietary Sodium Impact on Cardiovascular Risk (SSRN, 2024). <a href="https://doi.org/10.2139/ssrn.4984247" target="_blank">SSRN:4984247</a> <span class="muted">(2,547 views)</span></li>
+      <li>CoQ10 as Therapeutic Agent for Cardiovascular Disease (SSRN, 2024). <a href="https://doi.org/10.2139/ssrn.4983862" target="_blank">SSRN:4983862</a> <span class="muted">(3,220 views)</span></li>
+      <li>Functional Foods and Nutraceuticals: Definitions and Health Benefits (book, 2025). <a href="https://doi.org/10.54448/MSP.978-65-983826-2-9" target="_blank">DOI:10.54448/MSP.978-65-983826-2-9</a></li>
+    </ul>
+
+    <p class="muted small" style="margin-top:0.8rem;">
+      Complete publication list with 30+ additional works available on <a href="https://orcid.org/0009-0001-9929-3135" target="_blank">ORCID</a> and <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7628498" target="_blank">SSRN Author Page</a>.
+    </p>
+  </div>
+</section>
+
+<!-- EDITORIAL AND PEER REVIEW -->
+<section>
+  <h2>Editorial Roles and Peer Review</h2>
+  <div class="grid-2">
+    <div class="card">
+      <div class="subheading">Editorial Appointments</div>
+      <ul>
+        <li>Academic Editor, PLOS Digital Health (2025 to present)</li>
+        <li>Editorial Board, Intl. Journal of Diabetes and Endocrinology</li>
+        <li>Editor in Chief, Intl. Journal of Epidemiology and Public Health Research (2024 to present)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="subheading">Peer Review (49+ verified reviews)</div>
+      <ul>
+        <li>PLOS Digital Health (36)</li>
+        <li>European Journal of Preventive Cardiology (7)</li>
+        <li>European Heart Journal Digital Health (2)</li>
+        <li>Diabetes and Metabolic Syndrome (2)</li>
+        <li>Nature Reviews (1)</li>
+        <li>Journal of Advances in Medicine and Medical Research (1)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- IP PORTFOLIO -->
+<section>
+  <h2>Intellectual Property Portfolio</h2>
+  <div class="card">
+    <ul class="small">
+      <li>DrugSynth AI: USPTO Provisional Patent Application 64/018,624 (filed 2026 03 27). Governed multi agent pipeline architecture for precision medicine drug discovery.</li>
+      <li>Externally Governed Learning Systems (EGLS): USPTO Provisional 63/975,551 (filed 2026 02 04). Structural governance standard for adaptive and learning systems.</li>
+      <li>DrugSynth AI Trademark: USPTO Serial 99738691, Class 042, intent to use (filed 2026 04 01).</li>
+      <li>AIDD GOV Open Governance Standard: Apache 2.0 open specification for AI driven drug discovery governance. <a href="https://github.com/fxmedus/aidd-gov" target="_blank">github.com/fxmedus/aidd-gov</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- MEMBERSHIPS -->
+<section>
+  <h2>Professional Affiliations</h2>
+  <div class="card">
+    <ul>
+      <li>American Medical Informatics Association (AMIA) | Clinical Informatics</li>
+      <li>American Medical Association (AMA)</li>
+      <li>Endocrine Society</li>
+      <li>American Physician Scientists Association (APSA)</li>
+      <li>American College of Physicians (ACP)</li>
+      <li>American Society for Nutrition (ASN)</li>
+      <li>American College of Sports Medicine (ACSM)</li>
+      <li>Brazilian Society of Endocrinology and Metabolism (SBEM)</li>
+      <li>Brazilian Medical Nutrition Association (ABRAN)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- METHODS AND TOOLING -->
+<section>
+  <h2>Methods and Computational Tooling</h2>
+  <div class="card">
+    <div class="grid-3">
+      <div class="kpi">
+        <div class="kpi-title">Programming</div>
+        <div class="kpi-text">Python, R, Stata, SQL, JavaScript, YAML, Bash</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-title">Biomedical</div>
+        <div class="kpi-text">RDKit, AutoDock Vina, OpenTargets, ChEMBL, GTEx API, OpenGWAS, PubMed API, FAERS</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-title">Infrastructure</div>
+        <div class="kpi-text">FastAPI, Docker, GitHub Actions, Render, Zenodo, Harvard Dataverse, PROSPERO</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2>Contact and Collaboration</h2>
+  <div class="card">
+    <p><strong>Academic email:</strong> <a href="mailto:jyborges@bu.edu">jyborges@bu.edu</a></p>
+    <p><strong>Research correspondence:</strong> <a href="mailto:fxmedbrasil@gmail.com">fxmedbrasil@gmail.com</a></p>
+    <p class="muted small">
+      Available for research collaboration, advisory roles, peer review assignments, and academic partnerships in computational drug discovery, clinical AI governance, and translational endocrinology. Inquiries regarding the DrugSynth AI platform, MitoCoreX pipeline, or AIDD GOV governance standard are welcome.
+    </p>
+  </div>
+</section>
+
+</main>
+</body>
+</html>
