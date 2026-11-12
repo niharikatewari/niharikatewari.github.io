@@ -101,7 +101,9 @@
   
 
 
+
 /* Achievements & Collaborations Slider */
+
 .gallery-section {
   margin-top: 2rem;
 }
@@ -122,30 +124,49 @@
 
 .gallery-slide {
   min-width: 100%;
+  flex-shrink: 0;
   box-sizing: border-box;
   padding: 0.25rem;
 }
 
+/* Common image styling */
 .gallery-slide img {
   display: block;
+  border-radius: 0.6rem;
+  background: var(--kpi-bg);
+  margin: 0 auto;
+}
+
+/* Images 1 and 3: Landscape with zoom */
+.gallery-slide img.landscape-zoom {
   width: 100%;
   height: 480px;
   object-fit: cover;
   object-position: center;
-  border-radius: 0.6rem;
-  background: var(--kpi-bg);
-}
-
-/* Adjust zoom */
-.gallery-slide img {
-  transform: scale(1);
   transition: transform 0.4s ease;
 }
 
-.gallery-slide img:hover {
+.gallery-slide img.landscape-zoom:hover {
   transform: scale(1.04);
 }
 
+/* Image 2: Portrait, larger display */
+.gallery-slide img.portrait-adjust {
+  width: 100%;
+  height: 520px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Image 4: Portrait */
+.gallery-slide img.portrait-standard {
+  width: 100%;
+  height: 480px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Captions */
 .gallery-caption {
   text-align: center;
   padding: 0.85rem 0.5rem 0.4rem;
@@ -161,6 +182,7 @@
   font-size: 0.92rem;
 }
 
+/* Navigation controls */
 .gallery-controls {
   display: flex;
   align-items: center;
@@ -205,14 +227,22 @@
   transform: scale(1.25);
 }
 
+/* Mobile responsive */
 @media (max-width: 600px) {
-  .gallery-slide img {
+
+  .gallery-slide img.landscape-zoom {
     height: 300px;
   }
+
+  .gallery-slide img.portrait-adjust {
+    height: 380px;
+  }
+
+  .gallery-slide img.portrait-standard {
+    height: 340px;
+  }
 }
-  </style>
-  
-</head>
+
 <body>
 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
   <span id="theme-icon">&#9790;</span>
@@ -542,9 +572,10 @@ function toggleTheme(){
 
     <div class="gallery-track" id="galleryTrack">
 
-      <!-- Slide 1 -->
+      <!-- Slide 1: Landscape zoom -->
       <div class="gallery-slide">
-        <img src="images/1781790736084.jpg"
+        <img class="landscape-zoom"
+             src="images/1781790736084.jpg"
              alt="Research achievement">
         <div class="gallery-caption">
           <h3>Research Achievement</h3>
@@ -552,9 +583,10 @@ function toggleTheme(){
         </div>
       </div>
 
-      <!-- Slide 2 -->
+      <!-- Slide 2: Portrait, adjusted -->
       <div class="gallery-slide">
-        <img src="images/1704997240700.jpg"
+        <img class="portrait-adjust"
+             src="images/1704997240700.jpg"
              alt="Research collaboration">
         <div class="gallery-caption">
           <h3>Research Collaboration</h3>
@@ -562,9 +594,10 @@ function toggleTheme(){
         </div>
       </div>
 
-      <!-- Slide 3 -->
+      <!-- Slide 3: Landscape zoom -->
       <div class="gallery-slide">
-        <img src="images/1781790736058.jpg"
+        <img class="landscape-zoom"
+             src="images/1781790736058.jpg"
              alt="Conference participation and award acceptance">
         <div class="gallery-caption">
           <h3>Conference & Academic Engagement</h3>
@@ -572,19 +605,19 @@ function toggleTheme(){
         </div>
       </div>
 
-      <!-- Slide 4 -->
+      <!-- Slide 4: Portrait, adjusted -->
       <div class="gallery-slide">
-        <img src="images/1732359553501.jpg"
-             alt="Conference participation and award acceptance">
+        <img class="portrait-adjust"
+             src="images/1732359553501.jpg"
+             alt="Research presentation">
         <div class="gallery-caption">
-          <h3>Research presentation</h3>
+          <h3>Research Presentation</h3>
           <p>Participation in academic and research events: BITS Pilani</p>
         </div>
       </div>
 
     </div>
 
-    <!-- Slider controls -->
     <div class="gallery-controls">
       <button class="gallery-btn"
               onclick="moveGallery(-1)"
@@ -599,6 +632,7 @@ function toggleTheme(){
 
   </div>
 </section>
+
 
 <!-- EDITORIAL AND PEER REVIEW -->
 <section>
