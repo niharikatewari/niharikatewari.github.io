@@ -1,9 +1,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Julian Y. V. Borges, MD, MS | Researcher CV (ORCID)</title>
+  <title>Niharika Tewari | Researcher (ORCID)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Academic researcher CV for Julian Y. V. Borges, MD, MS. Clinician scientist specializing in computational drug discovery, clinical AI governance, genomic epidemiology, and translational endocrinology. Boston University, Department of Computer Science." />
+  <meta name="description" content="Doctoral Ph.D. researcher in the School of Computing at RMIT University and in the Department of Biological Sciences and Department of Computer Science and Information Systems at BITS Pilani, K.K. Birla Goa Campus." />
 
   <style>
     :root {
@@ -98,7 +98,107 @@
     .v-badge.zenodo { background: #024ea1; border: 1px solid #024ea1; }
     @media print { .theme-toggle { display: none; } }
     @media print { :root { background: var(--card); } .page { box-shadow: none; margin: 0; border-radius: 0; max-width: none; padding: 0.75in; } a { color: var(--text); text-decoration: none; } .badge { border: 1px solid #d1d5db; background: var(--card); color: var(--text); } .kpi { background: var(--card); } }
+  
+/* Achievements & Collaborations Slider */
+.gallery-section {
+  margin-top: 2rem;
+}
+
+.gallery-slider {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--card);
+  padding: 1rem;
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 0.25rem;
+}
+
+.gallery-slide img {
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  background: var(--kpi-bg);
+  border-radius: 0.6rem;
+  display: block;
+}
+
+.gallery-caption {
+  text-align: center;
+  padding: 0.85rem 0.5rem 0.4rem;
+}
+
+.gallery-caption h3 {
+  margin-bottom: 0.25rem;
+  color: var(--accent);
+}
+
+.gallery-caption p {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.gallery-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.gallery-btn {
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  border: 1px solid var(--badge-border);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.gallery-btn:hover {
+  opacity: 0.75;
+}
+
+.gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.gallery-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background: var(--border);
+  cursor: pointer;
+  padding: 0;
+}
+
+.gallery-dot.active {
+  background: var(--accent);
+  transform: scale(1.25);
+}
+
+@media (max-width: 600px) {
+  .gallery-slide img {
+    height: 230px;
+  }
+}
   </style>
+  
 </head>
 <body>
 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
@@ -420,6 +520,63 @@ function toggleTheme(){
   </div>
 </section>
 
+  
+<!-- ACHIEVEMENTS & COLLABORATIONS -->
+<section class="gallery-section" id="achievements">
+  <h2>Achievements & Collaborations</h2>
+
+  <div class="gallery-slider" aria-label="Achievements and collaborations gallery">
+
+    <div class="gallery-track" id="galleryTrack">
+
+      <!-- Slide 1 -->
+      <div class="gallery-slide">
+        <img src="images/achievement1.jpg"
+             alt="Research achievement">
+        <div class="gallery-caption">
+          <h3>Research Achievement</h3>
+          <p>Recognition and academic accomplishments.</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="gallery-slide">
+        <img src="images/collaboration1.jpg"
+             alt="Research collaboration">
+        <div class="gallery-caption">
+          <h3>Research Collaboration</h3>
+          <p>Academic collaboration and research engagement.</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="gallery-slide">
+        <img src="images/conference1.jpg"
+             alt="Conference participation">
+        <div class="gallery-caption">
+          <h3>Conference & Academic Engagement</h3>
+          <p>Participation in academic and research events.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slider controls -->
+    <div class="gallery-controls">
+      <button class="gallery-btn"
+              onclick="moveGallery(-1)"
+              aria-label="Previous image">&#10094;</button>
+
+      <div class="gallery-dots" id="galleryDots"></div>
+
+      <button class="gallery-btn"
+              onclick="moveGallery(1)"
+              aria-label="Next image">&#10095;</button>
+    </div>
+
+  </div>
+</section>
+
 <!-- EDITORIAL AND PEER REVIEW -->
 <section>
   <h2>Editorial Roles and Peer Review</h2>
@@ -504,5 +661,68 @@ function toggleTheme(){
 </section>
 
 </main>
+  <!-- GALLERY SLIDER JAVASCRIPT -->
+<script>
+let galleryIndex = 0;
+let galleryTimer;
+
+const galleryTrack = document.getElementById("galleryTrack");
+const gallerySlides = document.querySelectorAll(".gallery-slide");
+const galleryDots = document.getElementById("galleryDots");
+
+function updateGallery() {
+  if (!galleryTrack || !galleryDots) return;
+
+  galleryTrack.style.transform =
+    `translateX(-${galleryIndex * 100}%)`;
+
+  galleryDots.querySelectorAll(".gallery-dot").forEach((dot, i) => {
+    dot.classList.toggle("active", i === galleryIndex);
+  });
+}
+
+gallerySlides.forEach((_, i) => {
+  const dot = document.createElement("button");
+  dot.className = "gallery-dot";
+  dot.setAttribute("aria-label", `Go to image ${i + 1}`);
+  dot.onclick = () => {
+    galleryIndex = i;
+    updateGallery();
+    restartGallery();
+  };
+  galleryDots.appendChild(dot);
+});
+
+function moveGallery(direction) {
+  if (gallerySlides.length === 0) return;
+
+  galleryIndex =
+    (galleryIndex + direction + gallerySlides.length) %
+    gallerySlides.length;
+
+  updateGallery();
+  restartGallery();
+}
+
+function startGallery() {
+  if (gallerySlides.length > 1) {
+    galleryTimer = setInterval(() => {
+      galleryIndex = (galleryIndex + 1) % gallerySlides.length;
+      updateGallery();
+    }, 5000);
+  }
+}
+
+function restartGallery() {
+  clearInterval(galleryTimer);
+  startGallery();
+}
+
+if (gallerySlides.length > 0) {
+  updateGallery();
+  startGallery();
+}
+</script>
+
 </body>
 </html>
