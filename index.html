@@ -242,7 +242,8 @@
     height: 340px;
   }
 }
-</style>
+  </style>
+  
 </head>
 <body>
 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode">
@@ -729,8 +730,6 @@ const gallerySlides = document.querySelectorAll(".gallery-slide");
 const galleryDots = document.getElementById("galleryDots");
 
 function updateGallery() {
-  if (!galleryTrack || !galleryDots) return;
-
   galleryTrack.style.transform =
     `translateX(-${galleryIndex * 100}%)`;
 
